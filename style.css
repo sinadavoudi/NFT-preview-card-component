@@ -7,18 +7,17 @@
 figure {
     cursor: pointer;
 }
-/* .imghvr-fade {
-    border-radius: 20px;
-} */
+
 
 body {
     background-color: hsl(217, 54%, 11%);
-    color: hsl(0, 0%, 100%);
-}
+    color: hsl(0, 0%, 100%);}
 .main {
     background-color: hsl(216, 50%, 16%);
     margin: 25px;
     border-radius: 18px;
+    display: block;
+    margin: auto;
 }
 .image {
     border-radius: 25px;
@@ -116,9 +115,10 @@ span {
     display: none;
 }
 
-
-/* HOVER AKS ANJAM SHAVAD */
-
+.attribution span a {
+    text-decoration: none;
+    color: skyblue;
+}
 
 
 @media(min-width: 1440px) {
@@ -179,10 +179,15 @@ span {
 
     }
     .attribution {
-        position: absolute;
-        top:99%;
-        left: 52%;
-        /* -ms-transform: translate(-90%, -90%); */
-        transform: translate(-52%, -99%);
+        position: fixed;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        /* position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center; */
     }
 }
